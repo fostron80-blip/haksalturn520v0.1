@@ -5,8 +5,8 @@ from datetime import datetime, timedelta
 import time
 
 # --- 페이지 설정 ---
-st.set_page_config(page_title="K-Stock Strategy Pro (Web)", layout="wide")
-st.title("🚀 K-Stock 정밀 전략 스캐너 (Streamlit Ver.)")
+st.set_page_config(page_title="haksalturn520v0.1", layout="wide")
+st.title("🚀 haksalturn520v0.1")
 
 # --- 사이드바: 필터 설정 ---
 st.sidebar.header("🔍 검색 필터 설정")
@@ -144,6 +144,6 @@ if st.session_state.scan_results:
     st.download_button(
         label="📥 결과 엑셀(CSV) 다운로드",
         data=csv,
-        file_name=f"stock_scan_{datetime.now().strftime('%Y%m%d_%H%M')}.csv",
+        file_name=f"haksalturn520v0.1_{datetime.now().strftime('%Y%m%d_%H%M')}.csv",
         mime='text/csv',
     )
